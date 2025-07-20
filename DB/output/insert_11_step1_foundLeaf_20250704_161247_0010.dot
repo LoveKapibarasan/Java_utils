@@ -1,0 +1,13 @@
+digraph BPlusTree {
+    node [shape=record];
+    label = "Insert Step 1: Found leaf for key = 11";
+    labelloc = "top";
+    fontsize = 16;
+    Node0 [label="<f0> | 5 | <f1>"];
+    Leaf1 [label="<f0> 2 | 2.0 | <f1> 3 | 3.0"];
+    Node0:f0 -> Leaf1;
+    Leaf2 [label="<f0> 5 | 5.0 | <f1> 7 | 7.0", color=red, fontcolor=red];
+    Node0:f1 -> Leaf2;
+    Leaf1 -> Leaf2;
+    { rank = same; Leaf1; Leaf2; }
+}

@@ -1,0 +1,7 @@
+digraph BPlusTree {
+    node [shape=record];
+    label = "Insert Step 1: Found leaf for key = 3";
+    labelloc = "top";
+    fontsize = 16;
+    Leaf0 [label="<f0> 2 | 2.0", color=red, fontcolor=red];
+}

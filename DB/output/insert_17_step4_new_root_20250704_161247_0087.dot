@@ -1,0 +1,7 @@
+digraph BPlusTree {
+    node [shape=record];
+    label = "Insert Step 4: New root created";
+    labelloc = "top";
+    fontsize = 16;
+    Leaf0 [label="<f0> 2 | 2.0 | <f1> 3 | 3.0 | <f2> 5 | 5.0"];
+}

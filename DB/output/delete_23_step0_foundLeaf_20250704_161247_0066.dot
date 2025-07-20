@@ -1,0 +1,26 @@
+digraph BPlusTree {
+    node [shape=record];
+    label = "Delete Step 0: Found leaf for key = 23";
+    labelloc = "top";
+    fontsize = 16;
+    Node0 [label="<f0> | 19 | <f1>"];
+    Node1 [label="<f0> | 5 | <f1> | 11 | <f2>"];
+    Leaf2 [label="<f0> 2 | 2.0 | <f1> 3 | 3.0"];
+    Node1:f0 -> Leaf2;
+    Leaf3 [label="<f0> 5 | 5.0 | <f1> 7 | 7.0"];
+    Node1:f1 -> Leaf3;
+    Leaf4 [label="<f0> 11 | 11.0 | <f1> 17 | 17.0"];
+    Node1:f2 -> Leaf4;
+    Node0:f0 -> Node1;
+    Node5 [label="<f0> | 29 | <f1>"];
+    Leaf6 [label="<f0> 19 | 19.0 | <f1> 23 | 23.0", color=red, fontcolor=red];
+    Node5:f0 -> Leaf6;
+    Leaf7 [label="<f0> 29 | 29.0 | <f1> 31 | 31.0"];
+    Node5:f1 -> Leaf7;
+    Node0:f1 -> Node5;
+    Leaf2 -> Leaf3;
+    Leaf3 -> Leaf4;
+    Leaf4 -> Leaf6;
+    Leaf6 -> Leaf7;
+    { rank = same; Leaf2; Leaf3; Leaf4; Leaf6; Leaf7; }
+}
